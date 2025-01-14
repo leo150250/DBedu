@@ -1,0 +1,52 @@
+body {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+}
+#menu {
+	background-color: #6c6;
+	width: 4em;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+#menu .toolbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: stretch;
+}
+#menu .toolbox * {
+	flex-grow: 2;
+}
+#menu button {
+	padding: 0.5em;
+}
+#menu button.selecionado {
+	background-color: blanchedalmond;
+}
+#menu hr {
+	margin: 2px;
+	border: 1px solid #393;
+	border-bottom: none;
+	border-right: none;
+}
+
+#workspace {
+	background-color: #EEE;
+	width: calc(100% - 4em);
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 4em;
+	overflow: scroll;
+}
+
+div.elemento {
+	background-color: #FFF;
+	width: 200px;
+	height: 100px;
+	border: 1px solid #393;
+	box-shadow: 1px 1px 4px #0004;
+	position: absolute;
+}
